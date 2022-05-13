@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/task1.css'>
+</head>
+<body>
+
+<div id="goods">
+    <div 
+        :class="{ zero: good.count === 0, 
+                'not-many': good.count > 0 && good.count < 20, 
+                many: good.count >= 20 }"
+        v-for="good in sortedByCount">
+        <h3>{{ good.title }}</h3>
+        <p>Стоимость: {{ good.price }} р.</p>
+    </div>
+</div>
+
+<script src='js/task1.js'></script>
+</body>
+</html>

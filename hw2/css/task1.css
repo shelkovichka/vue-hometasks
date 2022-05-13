@@ -1,0 +1,23 @@
+#goods {
+    text-align: center;
+}
+
+div {
+    margin: 3%;
+    padding: 1%;
+}
+
+.zero {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.not-many {
+    background-color: darkcyan;
+    color: antiquewhite;
+}
+
+.many {
+    background-color: green;
+    color: antiquewhite;
+}

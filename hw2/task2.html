@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/task2.css'>
+</head>
+<body>
+
+<div id="articles">
+    <div class="buttons">
+        <button @click="toGrid">Отобразить сеткой</button>
+        <button @click="toList">Отобразить списком</button>
+    </div>
+    <div :class="{ grid: isActive,
+                list: isHidden}">
+        <main 
+            v-for="a in articles">
+            <img v-bind:src="a.image" v-bind:alt="a.title">
+            <p> {{ a.title }} </p>
+        </main>
+    </div>
+</div>
+
+<script src='js/task2.js'></script>
+</body>
+</html>
