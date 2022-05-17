@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    background-color: #d1d0cc;
+    font-family: sans-serif;
+}
+
+form {
+    display: flex;
+    background-color: #ebebeb;
+    justify-content: center;
+    padding: 1%;
+    margin: 2%;
+    height: auto;
+}
+
+form input {
+    padding: 0.5% 1%;
+    margin: 1%;
+    border: #d1d0cc;
+}
+
+div {
+    display: flex;
+    background-color: #ebebeb;
+    flex-direction: column;
+    margin: 5% 15%;
+    padding: 0 5% 2% 5%;
+    align-items: center;
+
+}
+
+h2 {
+    background-color: #ebebeb;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.remove {
+    margin-top: 3%;
+    border: #ebebeb;
+    padding: 1% 2%;
+}
